@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Assignment</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="contactme.html" method="get" class="form">
+            <h1>Contact Us</h1>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject" required>
+                <option value="" disabled selected>Select a subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="support">Support</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+            </select>
+            <div class="input2">
+                <div class="input4">
+                    <label>Select your interests:</label>
+                    <label><input type="checkbox" name="interest" value="news"> Discounts</label>
+                    <label><input type="checkbox" name="interest" value="updates"> Updates</label>
+                    <label><input type="checkbox" name="interest" value="offers"> Special Offers</label>
+                </div>
+
+                <div class="input3">
+                    <label>Preferred Contact Method:</label>
+                    <label><input type="radio" name="contact_method" value="email" required> Email</label>
+                    <label><input type="radio" name="contact_method" value="phone" required> Phone</label>
+                    <label><input type="radio" name="contact_method" value="post" required> Post</label>
+
+                </div>
+            </div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <div class="subscribe2">
+                <label for="subscribe">Subscribe to get Updates:</label>
+                <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
